@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "prepdebug",
+            "type": "shell",
+            "args": [
+                "prep_debug.sh"
+            ],
+            "command": "sh",
+            "problemMatcher": [],
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "args": [
+                "build.sh"
+            ],
+            "command": "sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
